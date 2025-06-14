@@ -3,6 +3,11 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
+.project-title {
+  color: #5e60ce; /* Rich violet-blue */
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
 
 
 * {
