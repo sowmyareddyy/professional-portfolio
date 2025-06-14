@@ -8,6 +8,18 @@
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
 }
+.contact-icons a {
+  font-size: 1.5rem;
+  color: #5e60ce;
+  margin: 0 10px;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #4a4ecb;
+  transform: scale(1.1);
+}
+
 
 .project-btn {
   display: inline-block;
