@@ -36,6 +36,56 @@ a {
   border-radius: 30px;
   transition: 0.3s;
 }
+/* 🔥 Background Animation */
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #1e002c);
+    background-size: 400% 400%;
+    animation: backgroundShift 15s infinite alternate;
+}
+
+@keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ✨ Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* 🚀 Fade Up Animation */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🎉 Pop In Animation */
+@keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* 👑 Example Usage */
+header h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+section#skills {
+    animation: fadeInUp 2s ease-out;
+}
+
+.skill-item {
+    animation: popIn 1s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
 .cta:hover {
   background: #928dab;
   color: #fff;
