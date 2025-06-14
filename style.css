@@ -75,6 +75,41 @@ h2 {
   height: 10px;
   border-radius: 20px;
 }
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-item {
+  background: #1c1c1c;
+  padding: 1rem;
+  border-radius: 15px;
+  text-align: center;
+  width: 120px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.skill-item p {
+  color: #fff;
+  font-weight: 500;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
 .html { width: 90%; background: #e67e22; }
 .css { width: 85%; background: #2980b9; }
 .js { width: 70%; background: #f39c12; }
