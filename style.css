@@ -210,3 +210,18 @@ footer {
     font-size: 2rem;
   }
 }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #1b1b2f);
+    background-size: 400% 400%;
+    animation: gradientFlow 20s ease infinite;
+    color: white;
+}
+
+/* 🔮 Smooth Gradient Flow Animation */
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
