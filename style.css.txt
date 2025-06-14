@@ -1,44 +1,127 @@
-/* style.css */
-
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fefefe;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-header {
-  background-color: #111;
-  padding: 1rem 2rem;
-  color: white;
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #111;
+  line-height: 1.6;
 }
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-nav ul li a {
-  color: white;
+a {
   text-decoration: none;
+  color: inherit;
+}
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #fff;
+  color: #111;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.cta:hover {
+  background: #928dab;
+  color: #fff;
 }
 
-.hero {
+section {
   padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+h2 {
   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #f1c40f;
+}
+
+#about p {
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.skills-container .skill {
+  margin-bottom: 1rem;
+}
+.skill p {
+  margin-bottom: 0.4rem;
+}
+.bar {
+  background: #333;
+  height: 10px;
+  border-radius: 20px;
+}
+.fill {
+  height: 10px;
+  border-radius: 20px;
+}
+.html { width: 90%; background: #e67e22; }
+.css { width: 85%; background: #2980b9; }
+.js { width: 70%; background: #f39c12; }
+.python { width: 75%; background: #2ecc71; }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  background: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 15px;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.contact-icons {
+  text-align: center;
+  font-size: 2rem;
+}
+.contact-icons a {
+  margin: 0 1rem;
+  transition: 0.3s;
+}
+.contact-icons a:hover {
+  color: #f1c40f;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #222;
-  color: white;
-  margin-top: 2rem;
+  padding: 2rem;
+  background: #000;
+  color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
 }
