@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -118,23 +119,28 @@
     </div>
   </section>
 
-  <section id="contact">
-  <h2>Contact</h2>
- <p style="text-align: center;">Let’s connect! Feel free to reach out for collaborations or just to say hi!</p>
+ <section id="contact" class="contact-section">
+  <div class="container">
+    <div class="contact-info">
+      <h2>Contact Info</h2>
+      <p><i class="fas fa-envelope"></i> sowmyareddy@example.com</p>
+      <p><i class="fab fa-github"></i> github.com/YourGitHub</p>
+      <p><i class="fab fa-linkedin"></i> linkedin.com/in/yourlinkedin</p>
+      <p><i class="fas fa-file-alt"></i> <a href="YourResumeLink.pdf" target="_blank">View Resume</a></p>
+    </div>
 
- <div class="contact-icons">
-  <a href="mailto:sowmyareddy1918@gmail.com" target="_blank" title="Email">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" width="30" height="30">
-  </a>
-  <a href="https://github.com/sowmyareddyy" target="_blank" title="GitHub">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" width="30" height="30">
-  </a>
-  <a href="https://www.linkedin.com/in/sowmyareddyvangooru/" target="_blank" title="LinkedIn">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="30" height="30">
-  </a>
-</div>
-
+    <div class="contact-form">
+      <h2>Send a Message</h2>
+      <form action="https://formspree.io/f/your-id" method="POST">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
 </section>
+
 
 
   <footer>
